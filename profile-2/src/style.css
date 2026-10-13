@@ -1,0 +1,182 @@
+/* CSS Variables for Maintainability */
+:root {
+    --font-heading: "Bricolage Grotesque", sans-serif;
+    --font-body: "Instrument Sans", sans-serif;
+    --color-bg-profile: rgba(245, 244, 244, 0.4);
+    --color-border-main: #dddddd;
+    --color-text-dark: #1f2937;
+    --color-text-muted: #6b7280;
+    
+    /* Card Accent Colors */
+    --color-about-bg: rgba(252, 238, 117, 0.7);
+    --color-card-a-bg: rgba(125, 243, 125, 0.74);
+    --color-card-a-border: rgba(95, 145, 98, 0.39);
+    --color-card-b-bg: rgba(221, 168, 245, 0.39);
+    --color-card-b-border: rgba(145, 95, 145, 0.39);
+    --color-card-c-bg: rgba(168, 182, 245, 0.39);
+    --color-card-c-border: rgba(95, 111, 145, 0.39);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-heading);
+    color: var(--color-text-dark);
+    background-color: #fcfcfc;
+}
+
+/* Layout Container */
+.profile-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 32px auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+/* Profile Card Top Header */
+.profile-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+    background: var(--color-bg-profile);
+    border: 1px solid var(--color-border-main);
+    border-radius: 24px;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.profile-section .img {
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.profile-section .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name-dtls {
+    text-align: left;
+}
+
+.name-dtls h1 {
+    margin: 0 0 4px 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.name-dtls p {
+    margin: 2px 0;
+    font-size: 18px;
+    font-family: var(--font-body);
+    color: var(--color-text-muted);
+}
+
+/* Profile Content Details */
+.profile-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-section {
+    width: 100%;
+    background-color: var(--color-about-bg);
+    padding: 20px 24px;
+    border-radius: 16px;
+}
+
+.about-section h3 {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+}
+
+.about-section p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.6;
+    font-family: var(--font-body);
+}
+
+/* Metric Cards Layout */
+.about-dtls-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.dtls-card {
+    border-radius: 14px;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dtls-card h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #374151;
+}
+
+.dtls-card .children p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* Specific Card Styling */
+.dtls-section-a {
+    background: var(--color-card-a-bg);
+    border: 1px solid var(--color-card-a-border);
+}
+
+.dtls-section-b {
+    background: var(--color-card-b-bg);
+    border: 1px solid var(--color-card-b-border);
+}
+
+.dtls-section-c {
+    background: var(--color-card-c-bg);
+    border: 1px solid var(--color-card-c-border);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .profile-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .name-dtls {
+        text-align: center;
+    }
+
+    .about-dtls-section {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,160 @@
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.profile-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-contnet {
+    width: 100%;
+    display: grid;
+    max-width: 1400px;
+}
+
+.profile-a-section {
+    width: 100%;
+}
+
+.a-section-a {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-name-or-img {
+    display: flex;
+
+}
+
+.profile-exprience {
+    .ex-list-a {
+        & h2 {
+            margin: 0px;
+        }
+
+        & p {
+            margin: 0px;
+        }
+    }
+}
+
+.name-img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.img-rounded-box {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.name {
+    & h1 {
+        font-size: 48px;
+        margin: 0px;
+
+    }
+
+    & p {
+        margin: 0px;
+        font-size: 20px;
+        color: gray;
+    }
+}
+
+.profile-about-dtls {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    max-width: 60%;
+    gap: 16px;
+
+    & h1 {
+        font-size: 48px;
+    }
+}
+
+.stls-list {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    gap: 16px;
+
+    & img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .list {
+        display: grid;
+        gap: 8px;
+        & p {
+            margin: 0px;
+        }
+
+        & h3 {
+            margin: 0px;
+        }
+    }
+}
+.a-section-b{
+    .button-s{
+        display: flex;
+        gap: 16px;
+        & button{
+            padding: 0px 24px;
+            font-size: 20px;
+            width: 300px;
+            border: none;
+            background-color: transparent;
+            border-bottom: 1px solid gray;
+
+        }
+    }
+
+}
+.b-section-dtls{
+    padding: 8px 24px;
+    & p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .d-s-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        .d-list{
+            padding: 4px 16px;
+            width: fit-content;
+            background-color: rgb(238, 237, 237);
+            border-radius: 30px;
+            color: black;
+            & p{
+                margin: 2px;
+                font-size: 16px;
+            }
+        }
+    }
+}

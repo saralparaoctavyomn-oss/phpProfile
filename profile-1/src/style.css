@@ -1,0 +1,256 @@
+html,
+body {
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.profile-contaner {
+    .profile-content {
+        .profile-image-section {
+            position: relative;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+
+            .bg-img {
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+
+                & img {
+                    width: 100%;
+                    height: 500px;
+                    object-fit: cover;
+                }
+            }
+
+            .upeer-profile-section {
+                position: absolute;
+                z-index: 99;
+                top: 30%;
+                background-color: #f0ecef;
+                width: 80%;
+                height: 400px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                padding: 24px;
+                border-top-left-radius: 30px;
+                border-top-right-radius: 30px;
+
+                .owner-section {
+                    width: 100%;
+                    max-width: 400px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2px;
+
+
+
+                    .owener-img {
+                        width: 200px;
+                        height: 200px;
+                        border: 1px solid gray;
+                        border-radius: 100%;
+                        /* overflow: hidden; */
+                        position: relative;
+
+                        .center {
+                            width: 200px;
+                            height: 200px;
+                            border: 1px solid gray;
+                            border-radius: 100%;
+                            overflow: hidden;
+                            position: relative;
+                        }
+
+                        .tag {
+                            background-color: rgb(0, 0, 0);
+                            padding: 4px 8px;
+                            border-radius: 30px;
+                            position: absolute;
+                            z-index: 30;
+                            top: 0px;
+                            right: 0px;
+                            color: white;
+
+                            & p {
+                                font-size: 14px;
+                                margin: 0px;
+                            }
+                        }
+
+                        & img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            position: relative;
+
+
+                        }
+                    }
+
+                    .loc {
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+
+                .owner-details {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+
+                    .dtls-f {
+                        & h1 {
+                            font-size: 48px;
+                            padding: 0px;
+                            margin: 0px;
+                        }
+                    }
+
+                    .social-dtls {
+                        width: 100%;
+                        display: flex;
+                        gap: 8px;
+                        padding: 0px;
+                        margin: 0px;
+
+                        .social-a {
+                            width: 20px;
+                            height: 20px;
+                            padding: 8px;
+                            border: 1px solid gray;
+                            border-radius: 100%;
+                            overflow: hidden;
+                            cursor: pointer;
+
+                            & img {
+                                width: 100%;
+                                height: 100%;
+
+                            }
+                        }
+                    }
+
+                    .owner-pr-tag {
+                        width: 100%;
+                        display: flex;
+                        gap: 32px;
+
+                        .pr-a {
+                            & p {
+                                font-size: 12px;
+                                margin: 0px;
+                                color: gray;
+                            }
+
+                            & h3 {
+                                margin: 0px;
+                                font-size: 26px;
+                            }
+                        }
+                    }
+
+                    .owner-skill-tag {
+                        .skill-a {
+                            .flex {
+                                display: flex;
+                                gap: 8px;
+                            }
+
+                            & p {
+                                font-size: 12px;
+                                margin: 0px;
+                                color: gray;
+                            }
+
+                            & h3 {
+                                font-size: 12px;
+                                color: rgb(66, 66, 66);
+                                width: fit-content;
+                                background-color: rgb(219, 216, 216);
+                                padding: 8px 16px;
+                                border-radius: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .profile-dtls-view-section {
+            margin-top: 120px;
+            width: 100%;
+            max-width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+
+
+            .section {
+                width: 100%;
+                display: flex;
+                height: 800px;
+
+
+                .colum-a {
+                    width: 100%;
+                    display: flex;
+                    justify-content: start;
+                    align-items: start;
+                    max-width: 400px;
+
+                    & p {
+                        font-size: 48px;
+                    }
+                }
+
+                .colum-b {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: start;
+                    font-size: 24px;
+
+                    .tab-section {
+                        & button {
+                            background-color: transparent;
+                            border: none;
+                            padding: 8px 16px;
+                            border-radius: 30px;
+                            /* text-decoration: underline; */
+                            text-decoration-color: gray;
+                            text-underline-offset: 8px;
+                            color: gray;
+                            cursor: pointer;
+                            font-size: 24px;
+                        }
+
+                        & button:hover {
+                            background-color: transparent;
+                            border: none;
+                            padding: 8px 16px;
+                            border-radius: 30px;
+                            text-decoration: underline;
+                            text-decoration-color: gray;
+                            text-underline-offset: 8px;
+                            color: black;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .active-contetn {
+                        text-align: justify;
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,121 @@
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.profile-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-contetn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    gap: 32px;
+}
+
+.section-a {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.a-sc-conten {
+    & p {
+        margin: 0px;
+        color: gray;
+        font-size: 24px
+    }
+
+    & h1 {
+        margin: 0px;
+        font-size: 120px;
+    }
+
+    & h4 {
+        margin: 0px;
+        font-size: 64px;
+    }
+}
+
+.b-sc-contetn {
+    width: 100%;
+    max-width: 700px;
+
+    & p {
+        margin: 0px;
+        color: gray;
+        font-size: 24px
+    }
+
+    & h4 {
+        margin: 0px;
+        font-size: 38px;
+    }
+}
+
+.section-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.list-a {
+    border: 1px solid gray;
+    padding: 24px 24px;
+    width: 350px;
+
+    & p {
+        font-size: 24px;
+    }
+
+    & h2 {
+        font-size: 32px;
+    }
+
+    & img {
+        height: fit-content;
+        width: 300px;
+    }
+}
+
+.list-b {
+    border: 1px solid gray;
+    /* padding: 24px 24px; */
+    width: 350px;
+    overflow: hidden;
+
+    & img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.list-c {
+    border: 1px solid gray;
+    padding: 24px 24px;
+    width: 300px;
+    overflow: hidden;
+
+    & p {
+        font-size: 24px;
+    }
+
+    & h2 {
+        font-size: 32px;
+    }
+}
